@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
+    <title>INSTANTrzekich</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h2>Instant <span class="orange">ржекич</span></h2></a>
+
+        <form class="search-bar">
+            <button type="submit"><img src="./search.svg" id="search" alt="Лупа"></button>
+            <input type="text" name="query" placeholder="Поиск">
+        </form>
+
+        <img src="./profile.svg" alt="Логотип" id="profile" height="50%">
+    </header>
+
+    <div id="types">
+        <a>Фото</a>
+        <a href="#" onclick="toggleDropdown(event, 'video')">Видео</a>
+
+        <a href="#" onclick="toggleDropdown(event, 'category')">Категории</a>
+        <a>Лайв стрим</a>
+        <a>Друзья</a>
+    </div>
+
+    <main id="container">
+        
+    </main>
+    
+</body>
+
+
+<script src="script.js"></script>
+</html>
+
+<ul id="category" class="dropdown" style="display: none;">
+    <li><a href="./tusur.html">Тусур</a></li>
+    <li>ШРЕК</li>
+    <li>MLP</li>
+</ul>
+
+<ul id="video" class="dropdown" style="display: none;">
+    <li>video</li>
+    <li>ШРЕК</li>
+    <li>MLP</li>
+</ul>
